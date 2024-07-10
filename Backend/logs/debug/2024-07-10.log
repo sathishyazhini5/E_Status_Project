@@ -414,3 +414,65 @@
 2024-07-10 13:59:40 info: ======= ENV: development =======
 2024-07-10 13:59:40 info: 🚀 App listening on the port 5000
 2024-07-10 13:59:40 info: =================================
+2024-07-10 14:43:54 info: =================================
+2024-07-10 14:43:54 info: ======= ENV: development =======
+2024-07-10 14:43:54 info: 🚀 App listening on the port 5000
+2024-07-10 14:43:54 info: =================================
+2024-07-10 14:43:57 info: [0mGET /api-docs/ [32m200[0m 7.106 ms - -[0m
+2024-07-10 14:43:57 info: [0mGET /api-docs/swagger-ui-init.js [36m304[0m 1.362 ms - -[0m
+2024-07-10 14:43:57 info: [0mGET /api-docs/swagger-ui.css [32m200[0m 11.232 ms - -[0m
+2024-07-10 14:43:57 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [32m200[0m 8.781 ms - -[0m
+2024-07-10 14:43:57 info: [0mGET /api-docs/swagger-ui-bundle.js [32m200[0m 6.630 ms - -[0m
+2024-07-10 14:43:57 info: [0mGET /api-docs/favicon-32x32.png [32m200[0m 1.285 ms - 628[0m
+2024-07-10 14:43:57 info: [0mGET /api-docs/ [36m304[0m 0.799 ms - -[0m
+2024-07-10 14:44:05 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 1.745 ms - -[0m
+2024-07-10 14:44:31 info: [0mPOST /quickcode [32m201[0m 2585.039 ms - 241[0m
+2024-07-10 14:45:48 info: [0mPOST /quickcode [32m201[0m 686.649 ms - 243[0m
+2024-07-10 15:13:33 info: =================================
+2024-07-10 15:13:33 info: ======= ENV: development =======
+2024-07-10 15:13:33 info: 🚀 App listening on the port 5000
+2024-07-10 15:13:33 info: =================================
+2024-07-10 15:44:58 info: [0mGET /api-docs/ [36m304[0m 44.335 ms - -[0m
+2024-07-10 15:44:58 info: [0mGET /api-docs/swagger-ui-init.js [36m304[0m 2.123 ms - -[0m
+2024-07-10 15:44:58 info: [0mGET /api-docs/swagger-ui-bundle.js [36m304[0m 7.215 ms - -[0m
+2024-07-10 15:44:58 info: [0mGET /api-docs/swagger-ui.css [36m304[0m 12.120 ms - -[0m
+2024-07-10 15:44:58 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [36m304[0m 9.670 ms - -[0m
+2024-07-10 15:44:58 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 2.149 ms - -[0m
+2024-07-10 15:44:58 info: [0mGET /api-docs/ [36m304[0m 5.584 ms - -[0m
+2024-07-10 15:45:04 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 0.673 ms - -[0m
+2024-07-10 15:45:13 info: [0mGET /api-docs/ [36m304[0m 0.884 ms - -[0m
+2024-07-10 15:45:13 info: [0mGET /api-docs/swagger-ui-init.js [36m304[0m 0.910 ms - -[0m
+2024-07-10 15:45:13 info: [0mGET /api-docs/swagger-ui.css [36m304[0m 5.489 ms - -[0m
+2024-07-10 15:45:13 info: [0mGET /api-docs/swagger-ui-bundle.js [36m304[0m 4.930 ms - -[0m
+2024-07-10 15:45:13 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [36m304[0m 5.103 ms - -[0m
+2024-07-10 15:45:13 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 2.399 ms - -[0m
+2024-07-10 15:45:13 info: [0mGET /api-docs/ [36m304[0m 2.192 ms - -[0m
+2024-07-10 15:58:57 info: =================================
+2024-07-10 15:58:57 info: ======= ENV: development =======
+2024-07-10 15:58:57 info: 🚀 App listening on the port 5000
+2024-07-10 15:58:57 info: =================================
+2024-07-10 16:02:38 info: =================================
+2024-07-10 16:02:38 info: ======= ENV: development =======
+2024-07-10 16:02:38 info: 🚀 App listening on the port 5000
+2024-07-10 16:02:38 info: =================================
+2024-07-10 17:18:27 info: [0mGET /api-docs/swagger-ui-init.js [36m304[0m 13.561 ms - -[0m
+2024-07-10 17:18:27 info: [0mGET /api-docs/swagger-ui.css [36m304[0m 74.510 ms - -[0m
+2024-07-10 17:18:27 info: [0mGET /api-docs/swagger-ui-bundle.js [36m304[0m 50.105 ms - -[0m
+2024-07-10 17:18:27 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [36m304[0m 53.086 ms - -[0m
+2024-07-10 17:18:27 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 1.208 ms - -[0m
+2024-07-10 17:18:27 info: [0mGET /api-docs/ [36m304[0m 2.590 ms - -[0m
+2024-07-10 17:27:02 info: =================================
+2024-07-10 17:27:02 info: ======= ENV: development =======
+2024-07-10 17:27:02 info: 🚀 App listening on the port 5000
+2024-07-10 17:27:02 info: =================================
+2024-07-10 17:27:13 info: [0mGET /api-docs/ [36m304[0m 5.435 ms - -[0m
+2024-07-10 17:27:13 info: [0mGET /api-docs/swagger-ui-init.js [36m304[0m 0.672 ms - -[0m
+2024-07-10 17:27:13 info: [0mGET /api-docs/swagger-ui.css [36m304[0m 5.714 ms - -[0m
+2024-07-10 17:27:13 info: [0mGET /api-docs/swagger-ui-bundle.js [36m304[0m 5.485 ms - -[0m
+2024-07-10 17:27:13 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [36m304[0m 6.092 ms - -[0m
+2024-07-10 17:27:13 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 1.012 ms - -[0m
+2024-07-10 17:27:13 info: [0mGET /api-docs/ [36m304[0m 0.986 ms - -[0m
+2024-07-10 17:27:24 info: =================================
+2024-07-10 17:27:24 info: ======= ENV: development =======
+2024-07-10 17:27:24 info: 🚀 App listening on the port 5000
+2024-07-10 17:27:24 info: =================================
