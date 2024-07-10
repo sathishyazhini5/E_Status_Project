@@ -139,6 +139,17 @@ paths:
         500:
           description: 'Server Error'
 
+  /metadata/meta_code_name:
+    get:
+      tags:
+        - metadata
+      summary: Get Metadata Code Names
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
   /quickcode:
     post:
       tags:

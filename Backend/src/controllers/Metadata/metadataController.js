@@ -31,4 +31,18 @@ export const getAllMetadata = async (req, res) => {
     console.error(error);
     res.status(500).json({ error: 'Server Error' });
   }
-};
+}
+  export const getMetacodedata = async (req, res) => {
+    try {
+      const result = await prisma.metadata_mst.findMany({
+        select: {
+          meta_code_name: true,
+        },
+      });
+  
+      res.status(200).json(result);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Server Error' });
+    }
+  };
