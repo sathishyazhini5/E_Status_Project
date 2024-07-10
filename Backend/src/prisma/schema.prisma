@@ -1,0 +1,119 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model metadata_mst {
+  screen_code    String @map("screen_code") @db.VarChar(10)
+  meta_code      String @map("meta_code") @db.VarChar(10)
+  screen_name    String @db.VarChar(50)
+  meta_code_name String @db.VarChar(50)
+  @@id([screen_code, meta_code])
+}
+
+model quickcode_mst {
+  quick_code_type String @map("quick_code_type") @db.VarChar(50)
+  quick_code      String @map("quick_code") @db.VarChar(10)
+  language_code   Int    @map("language_code")
+  quickcode_name  String @db.VarChar(100)
+  concurrency_val Int?
+  created_by      String? @db.VarChar(50)
+  created_date    DateTime? @db.Timestamp
+  updated_by      String? @db.VarChar(50)
+  updated_date    DateTime? @db.Timestamp
+  @@id([quick_code_type, quick_code, language_code])
+}
+
+model country_mst {
+  country_code    String @map("country_code") @db.VarChar(10)
+  language_code   Int    @map("language_code")
+  country_name    String @db.VarChar(100)
+  nationality     String @db.VarChar(100)
+  ISD_code        String @db.VarChar(5)
+  concurrency_val Int?
+  created_by      String? @db.VarChar(50)
+  created_date    DateTime? @db.Timestamp
+  updated_by      String? @db.VarChar(50)
+  updated_date    DateTime? @db.Timestamp
+  @@id([country_code, language_code])
+}
+
+model state_mst {
+  state_code      String @map("state_code") @db.VarChar(10)
+  country_code    String @map("country_code") @db.VarChar(10)
+  language_code   Int    @map("language_code")
+  state_name      String @db.VarChar(100)
+  ISD_code        String @db.VarChar(4)
+  concurrency_val Int?
+  created_by      String? @db.VarChar(50)
+  created_date    DateTime? @db.Timestamp
+  updated_by      String? @db.VarChar(50)
+  updated_date    DateTime? @db.Timestamp
+  @@id([state_code, country_code, language_code])
+}
+
+model province_mst {
+  province_code   String @map("province_code") @db.VarChar(10)
+  country_code    String @map("country_code") @db.VarChar(10)
+  language_code   Int    @map("language_code")
+  province_name   String @db.VarChar(100)
+  short_name      String @db.VarChar(5)
+  date_format     String? @db.VarChar(8)
+  academic_year   String? @db.VarChar(12)
+  concurrency_val Int?
+  created_by      String? @db.VarChar(50)
+  created_date    DateTime? @db.Timestamp
+  updated_by      String? @db.VarChar(50)
+  updated_date    DateTime? @db.Timestamp
+  @@id([province_code, country_code, language_code])
+}
+
+model apostolates_mst {
+  apostolate_code  String @map("apostolate_code") @db.VarChar(10)
+  centre_type_code String @map("centre_type_code") @db.VarChar(10)
+  language_code    Int    @map("language_code")
+  apostolate_name  String @db.VarChar(100)
+  centre_type_name String @db.VarChar(5)
+  date_format      String? @db.VarChar(8)
+  academic_year    String? @db.VarChar(12)
+  concurrency_val  Int?
+  created_by       String? @db.VarChar(50)
+  created_date     DateTime? @db.Timestamp
+  updated_by       String? @db.VarChar(50)
+  updated_date     DateTime? @db.Timestamp
+  @@id([apostolate_code, centre_type_code, language_code])
+}
+
+model users_mst {
+  province_code   String @map("province_code") @db.VarChar(10)
+  user_id         String @map("user_id") @db.VarChar(50)
+  language_code   Int    @map("language_code")
+  first_name      String @db.VarChar(50)
+  last_name       String? @db.VarChar(50)
+  password        String @db.VarChar(20)
+  user_type_code  String @db.VarChar(10)
+  concurrency_val Int?
+  created_by      String? @db.VarChar(50)
+  created_date    DateTime? @db.Timestamp
+  updated_by      String? @db.VarChar(50)
+  updated_date    DateTime? @db.Timestamp
+  @@id([province_code, user_id, language_code])
+}
+
+model division_setup_mst {
+  province_code      String @map("province_code") @db.VarChar(10)
+  division_type_code String @map("division_type_code") @db.VarChar(50)
+  division_code      String @map("division_code") @db.VarChar(10)
+  language_code      Int    @map("language_code")
+  division_name      String @db.VarChar(50)
+  concurrency_val    Int?
+  created_by         String? @db.VarChar(50)
+  created_date       DateTime? @db.Timestamp
+  updated_by         String? @db.VarChar(50)
+  updated_date       DateTime? @db.Timestamp
+  @@id([province_code, division_type_code, division_code, language_code])
+}
