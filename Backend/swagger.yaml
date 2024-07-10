@@ -129,6 +129,15 @@ paths:
           description: 'Created'
         500:
           description: 'Server Error'
+    get:
+      tags:
+        - metadata
+      summary: Get All Metadata
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
 
   /quickcode:
     post:
